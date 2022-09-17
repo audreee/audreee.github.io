@@ -1,0 +1,9 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}

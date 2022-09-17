@@ -1,6 +1,6 @@
 import '../styles/About.css';
 
-let About = () => {
+const About = () => {
     return (
       <div className="section-container parent">
         <div className="text-column">

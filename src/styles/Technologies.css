@@ -1,0 +1,5 @@
+.list {
+    min-width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
