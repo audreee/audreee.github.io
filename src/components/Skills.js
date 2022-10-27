@@ -4,7 +4,7 @@ import Technologies from './Technologies';
 let Skills = () => {
     return (
       <div className="parent section-container">
-        <div className="text-column row-container">
+        <div className="text-column row-container skills-container">
           <div className="column">
             <h2 className="sub-title">I enjoy problem-solving</h2>
             <div>
