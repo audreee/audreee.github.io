@@ -6,19 +6,20 @@
   top: 0;
   width: 100vw;
   z-index: 100;
-  font-size: 1.5em;
 }
 
 .nav-left {
   display: flex;
   flex-direction: left;
   justify-content: left;
+  align-items: center;
 }
 
 .nav-right {
   display: flex;
   flex-direction: row;
   justify-content: right;
+  align-items: center;
 }
 
 .nav-bar a {
@@ -39,4 +40,8 @@
 
 .nav-bar a:visited{
   color: #b4abab;
+}
+
+.burger {
+  padding: 5px 10px;
 }

@@ -11,23 +11,24 @@ let Technologies = () => {
 
 const technologies_list = [
     "JavaScript (ES5/ES6)",
+    "Ruby",
+    "Rails",
     "React",
-    "HTML",
-    "CSS",
     "Node.js",
     "MySQL",
-    "MongoDB",
     "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Docker",
     "C",
     "Python",
-    "Docker",
-    "AWS",
+    "rSpec",
     "Jest",
     "Mocha/Chai",
     "Git",
     "Webpack",
-    "Ruby",
-    "Rails",
-    "Docker"
+    "Docker",
+    "HTML",
+    "CSS"
     ]
 export default Technologies;

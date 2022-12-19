@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
 import useWindowSize from '../hooks/getWindowDimensions';
 
@@ -29,7 +30,9 @@ const Navbar = props => {
             <FontAwesomeIcon icon={faBars} size="2x" onClick={handleClick} style={{color: '#F8EFE4'}}/>
           </div>
         :
-          <a href="#" onClick={handleClick}>Audree Steinberg</a>
+          <a href="#">
+            <FontAwesomeIcon icon={faHouse} onClick={handleClick} style={{color: '#F8EFE4'}} />
+          </a>
         }
       </div>
       <div className="nav-right">
