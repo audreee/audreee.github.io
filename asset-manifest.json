@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/audreee/static/css/main.f9dae024.css",
+    "main.js": "/audreee/static/js/main.9d348b21.js",
+    "static/js/787.71e672d5.chunk.js": "/audreee/static/js/787.71e672d5.chunk.js",
+    "index.html": "/audreee/index.html",
+    "main.f9dae024.css.map": "/audreee/static/css/main.f9dae024.css.map",
+    "main.9d348b21.js.map": "/audreee/static/js/main.9d348b21.js.map",
+    "787.71e672d5.chunk.js.map": "/audreee/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9dae024.css",
+    "static/js/main.9d348b21.js"
+  ]
+}
