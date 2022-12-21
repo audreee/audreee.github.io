@@ -45,3 +45,17 @@
 .burger {
   padding: 5px 10px;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .nav-left {
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+  }
+}

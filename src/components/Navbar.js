@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import '../styles/Navbar.css';
+import '../styles/navbar.css';
 import useWindowSize from '../hooks/getWindowDimensions';
 
 const Navbar = props => {
@@ -12,26 +12,32 @@ const Navbar = props => {
   let renderLinks = () => {
     return(
       <div className="links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#about" onClick={handleLinkClick}>About</a>
+        <a href="#skills" onClick={handleLinkClick}>Skills</a>
       </div>
     );
   };
 
-  let handleClick = () => {
-    setCollapseMenu(false);
+  let handleLinkClick = () => {
+    setCollapseMenu(true);
+  }
+
+  let handleBurgerClick = () => {
+    setCollapseMenu(false)
   }
 
     let leftSide;
     if (width < 769) { 
-      if (collapseMenu === true) {
+      if (collapseMenu) {
         leftSide = (
           <div className="burger">
-            <FontAwesomeIcon icon={faBars} size="2x" onClick={handleClick} style={{color: '#F8EFE4'}}/>
+            <FontAwesomeIcon icon={faBars} size="2x" onClick={handleBurgerClick} style={{color: '#F8EFE4'}}/>
           </div>
         )
       } else {
-        leftSide = renderLinks();
+        leftSide = (  
+          renderLinks()
+        )
       } 
     } else {
       leftSide = (
@@ -48,9 +54,9 @@ const Navbar = props => {
       </div>
       <div className="nav-right">
       {width >= 769 ?
-        renderLinks() 
+          renderLinks()
         :
-        null
+          null
       }
     </div>
   </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/App.css';
+import '../styles/app.css';
 import Welcome from './Welcome';
 import About from './About';
 import Skills from './Skills';

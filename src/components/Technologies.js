@@ -1,5 +1,5 @@
 import Technology from './Technology';
-import '../styles/Technologies.css';
+import '../styles/technologies.css';
 
 let Technologies = () => {
     return (
