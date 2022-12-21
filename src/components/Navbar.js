@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
@@ -22,28 +22,40 @@ const Navbar = props => {
     setCollapseMenu(false);
   }
 
-  return (
-    <div className="nav-bar">
-      <div className="nav-left">
-        {width < 769 ?
+    let leftSide;
+    if (width < 769) { 
+      if (collapseMenu === true) {
+        leftSide = (
           <div className="burger">
             <FontAwesomeIcon icon={faBars} size="2x" onClick={handleClick} style={{color: '#F8EFE4'}}/>
           </div>
-        :
-          <a href="#">
-            <FontAwesomeIcon icon={faHouse} onClick={handleClick} style={{color: '#F8EFE4'}} />
-          </a>
-        }
+        )
+      } else {
+        leftSide = renderLinks();
+      } 
+    } else {
+      leftSide = (
+        <a href="#">
+          <FontAwesomeIcon icon={faHouse} style={{color: '#F8EFE4'}} />
+        </a>
+      )
+    }
+
+  return (
+    <div className="nav-bar">
+      <div className="nav-left">
+        {leftSide}
       </div>
       <div className="nav-right">
-        {width >= 769 ?
-          renderLinks() 
-          :
-          null
-        }
-      </div>
+      {width >= 769 ?
+        renderLinks() 
+        :
+        null
+      }
     </div>
+  </div>
   )
 };
+
 
 export default Navbar;
