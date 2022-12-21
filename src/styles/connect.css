@@ -1,0 +1,21 @@
+.row-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .row-icons > a:hover {
+    opacity: 0.5;
+  }
+
+.contact-icon {
+    font-size: 4em;
+    color: #b4abab
+}
+
+ /* Mobile */
+@media screen and (max-width: 768px) {
+    .contact-icon {
+        font-size: 3em;
+    }
+}

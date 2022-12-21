@@ -14,6 +14,7 @@ const Navbar = props => {
       <div className="links">
         <a href="#about" onClick={handleLinkClick}>About</a>
         <a href="#skills" onClick={handleLinkClick}>Skills</a>
+        <a href="#connect" onClick={handleLinkClick}>Connect</a>
       </div>
     );
   };

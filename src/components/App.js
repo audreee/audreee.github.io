@@ -4,6 +4,7 @@ import Welcome from './Welcome';
 import About from './About';
 import Skills from './Skills';
 import Navbar from './Navbar';
+import Connect from './Connect';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </div>
         <div id="skills">
           <Skills />
+        </div>
+        <div id="connect">
+          <Connect />
         </div>
       </div>
     </div>
